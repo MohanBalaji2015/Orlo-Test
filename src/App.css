@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* reset css ends */
+
+/* next page css */
+header h1 {
+  text-align: center;
+  background-color: #6d5ee4;
+  border-bottom: 2px solid red;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-conatiner {
+  background-color: #474f56;
+  width: 300px;
+  padding: 30px 20px 300px 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.right-container {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  width: calc(100% - 300px);
+}
+.feed-list li {
+  text-decoration: none;
+  list-style: none;
+}
+.add-feed-btn {
+  display: block;
+  background-color: blue;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 20px;
+}
+.new-feed-form label {
+  width: 100%;
+}
+.new-feed-form label input,
+.left-conatiner div input[type="text"] {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin: 10px 0px;
+  box-sizing: border-box;
+}
+.left-conatiner h3,
+.left-conatiner h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+.left-conatiner h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+input[type="radio"] {
+  transform: scale(1.5);
+}
+.cross-btn {
+  border: none;
+  border-radius: 50%;
+  background-color: #f182be;
+  font-size: 10px;
+}
+.feed-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-list li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-list li div div {
+  width: 100%;
+  color: white;
+  font-weight: 700;
+}
+.left-conatiner div > input[type="radio"] {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin: 20px 20px 20px 0;
+}
+.right-container {
+  height: 100vh;
+  overflow: scroll;
+}
+.right-container div:nth-child(1) > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feed-card {
+  margin: 10px;
+  width: 260px;
+  height: 367px;
+  background-color: white;
+  position: relative;
+}
+.feed-card h1 {
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  background-color: #474f56;
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+}
+.top-header p:first-child {
+  color: blue;
+  font-weight: bold;
+}
+.feed-card .post-link {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #474f56;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.desc {
+  height: 200px;
+  overflow: scroll;
+  padding: 10px;
+}
+.sort-feed {
+  padding: 10px;
+  font-weight: bold;
+}
+.sort-feed button {
+  background-color: darkblue;
+  color: white;
+  margin-left: 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+  border: 0;
+}
+.thumbnail {
+  padding-left: 10px;
+  max-height: 150px;
+}
+@media only screen and (max-width: 747px) {
+  .left-conatiner {
+    background-color: #474f56;
+    width: 100%;
+    padding: 30px 20px 30px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .right-container {
+    height: auto;
+    width: 100%;
+  }
+  .right-container > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .right-container div:nth-child(1) > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
